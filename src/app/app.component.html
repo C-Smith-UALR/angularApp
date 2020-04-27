@@ -50,12 +50,17 @@
 
       </div>
       <div class="col-md-8">
-        First Name <input type="text" [(ngModel)]="selectedPhysician.firstName"/><br>
-        Last Name <input type="text" [(ngModel)]="selectedPhysician.lastName"/><br>
-        Maximum Shifts <input type="text" [(ngModel)]="selectedPhysician.maxShiftLoad"/><br>
-        Phone <input type="tel" [(ngModel)]="selectedPhysician.phoneNumber"/><br>
+        First Name <br>
+        <input type="text" [(ngModel)]="selectedPhysician.firstName"/><br>
+        Last Name <br>
+        <input type="text" [(ngModel)]="selectedPhysician.lastName"/><br>
+        Maximum Shifts <br>
+        <input type="text" [(ngModel)]="selectedPhysician.maxShiftLoad"/><br>
+        Phone <br>
+        <input type="tel" [(ngModel)]="selectedPhysician.phoneNumber"/><br>
         <!--Specialty <input type="text" [(ngModel)]="specialty"/><br>-->
-        Specialty <select [(ngModel)]="selectedPhysician.specialty">
+        Specialty <br>
+        <select [(ngModel)]="selectedPhysician.specialty">
         <option value="Family Medicine">Family Medicine</option>
         <option value="Surgery">Surgery</option>
         <option value="Hospice and Palliative Medicine">Hospice and Palliative Medicine</option>
@@ -63,10 +68,10 @@
         <option value="">-----</option>
       </select><br>
 
-        <button class="btn btn-primary mt-1" (click)="createPhysician()">
+        <button class="btn btn-primary mt-2" (click)="createPhysician()">
           Create
         </button>
-        <button class="btn btn-danger ml-1 mt-1" (click)="deletePhysician()">
+        <button class="btn btn-danger ml-1 mt-2" (click)="deletePhysician()">
           Delete
         </button>
         <br>
